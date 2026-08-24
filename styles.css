@@ -82,8 +82,11 @@ h3{font-size:1.2rem}
 .social-area{padding:28px 0 20px;border-top:1px solid rgba(255,255,255,.15);margin-top:28px}
 .social-area h3{margin:0 0 16px}
 .social-links{display:flex;flex-wrap:wrap;gap:10px}
-.social-links a{width:42px;height:42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:800;font-size:12px;transition:.2s ease;background:rgba(255,255,255,.05)}
+.social-links a{width:44px;height:44px;min-width:44px;min-height:44px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:inline-flex!important;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:800;font-size:12px;line-height:1;transition:.2s ease;background:rgba(255,255,255,.05);overflow:hidden;box-sizing:border-box}
 .social-links a:hover{transform:translateY(-2px);background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5)}
-.social-links svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.social-links svg{display:block!important;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;min-width:22px!important;min-height:22px!important;flex:0 0 22px!important;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .social-links svg path{fill:currentColor;stroke:none}
+.social-links svg rect,.social-links svg circle{fill:none;stroke:currentColor;stroke-width:1.8}
+.social-links svg.play path{fill:currentColor;stroke:none}
+.social-links span{display:inline-flex!important;width:22px;height:22px;align-items:center;justify-content:center;font-size:11px;line-height:1;font-weight:900}
 @media(max-width:700px){.social-links{gap:8px}.social-links a{width:38px;height:38px}.footer-brand .footer-logo{width:180px}}
